@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>命運好好玩 | 首頁</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">命運好好玩</a></h1>
+    </header>
+    <main id="home">
+        <a href="people/index.html" title="人際" class="box">人際</a>
+        <a href="love/index.html" title="愛情" class="box">愛情</a>
+        <a href="job/index.html" title="工作" class="box">工作</a>
+    </main>
+    <footer>
+        Copyright &copy; 2024 Rain. All rights reserved.<br>
+        版權所有 &copy; 2024 林科豪
+    </footer>
+    <div id="msg">
+        <p>
+            內心有困惑嗎？<br>
+            試著找出答案吧！
+        </p>
+        <button type="button" id="closeBtn">確定</button>
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById("closeBtn").addEventListener("click", function(){
+        document.getElementById("msg").remove();
+    })
+</script>

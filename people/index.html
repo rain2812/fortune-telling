@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人際 | 命運好好玩</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="flex">
+        <h1><a href="../index.html">命運好好玩</a></h1>
+        <menu>
+            <ul>
+                <li><a href="../people/index.html">人際</a></li>
+                <li><a href="../love/index.html">愛情</a></li>
+                <li><a href="../job/index.html">工作</a></li>
+            </ul>
+        </menu>
+        <nav>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </nav>
+    </header>
+    <main id="game" class="flex">
+        <div class="box">
+            <h2 id="title">人際</h2>
+            <hr>
+            <ol id="check"></ol>
+            <p id="result"></p>
+            <button type="button" id="btn">抽籤</button>
+            <button type="button" id="reset" onclick="window.location.reload()">再玩一次</button>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; 2024 Rain. All rights reserved.<br>
+        版權所有 &copy; 2024 林科豪
+    </footer>
+    <div id="load">
+        <img src="../images/2.png" alt="">
+        <img src="../images/1.png" alt="">
+    </div>
+</body>
+</html>
+<script src="../js/menu.js"></script>
+<script src="../js/data.js"></script>
+<script>
+    let data = dataList["people"];
+</script>
+<script src="../js/draw.js"></script>
